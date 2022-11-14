@@ -74,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
           firstName: values.firstName,
           lastName:values.lastName
         });
-        console.log(registerResponse)
+        console.log(registerResponse.data)
 
         login(registerResponse)
 
@@ -96,16 +96,12 @@ const useStyles = makeStyles((theme) => ({
         <Typography component="h1" variant="h5">
           Sign up
         </Typography>
-        <Box>
-       
-            
+        <Box>   
 						{formik.errors.general && (
               <div className={classes.root}>
 							    <Alert severity="warning">{formik.errors.general}</Alert>,
               </div>
 						)}
-          
-        
         </Box>
         <form
           className={classes.form}

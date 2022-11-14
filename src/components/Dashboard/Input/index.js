@@ -3,7 +3,7 @@ import './styles.css';
 import useOnClickOutside from '../../../hooks/useOnClickOutside';
 
 const Input = (props) => {
-  // console.log('Input - props', activeParks, reset)
+ 
   const [val, setVal] = useState('');
 
   const valRef = useRef('')
@@ -43,23 +43,22 @@ const Input = (props) => {
       })}, [props.activeParks]
   )
 
-  // THIS HANDLES THE MANUAL TOGGLING OF THE DROP DOWN
+
   const handleToggle = () => {
-    //setIsVisible(!isVisible)
+  
     setOpen(true)
   }
 
 
-  
-  // console.log('Input - parkChoices', props, parkChoices)
+ 
   return (
     <>
     <form id='sidebarStyle'>
-      <label htmlFor="">Find A Court - all courts</label>
+      <label htmlFor="">Park Seçiniz</label>
       <input id="parkInput" ref={valRef}
         onClick={handleToggle}
         type="text"
-        placeholder="court name"
+        placeholder="park adı..."
         
       />
     </form>
@@ -72,5 +71,4 @@ const Input = (props) => {
 };
 
 
-// export default MemoizedInput= memo(Input)
 export default Input

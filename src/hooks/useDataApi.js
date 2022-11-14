@@ -7,21 +7,14 @@ const useDataApi = (initialUrl, initialData) => {
 
   useEffect(() => {
     const makeAPICall = async () => {
-      
-
-          
           try {
             const res = await fetch(url);
             const json = await res.json();
-            // console.log('useDataApi - useEffect - json', json);
             setData([json.data]);
-            isLoading(false)
-            
+            isLoading(false)     
           } catch (err) {
             console.log('err', err);
           }
-      
-     
     };
     makeAPICall();
   }, [url]);

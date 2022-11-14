@@ -1,15 +1,11 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './styles.css';
 import useDataApi from '../../hooks/useDataApi';
-
 import Map from './Map'
 import DropDown from './DropDown'
 import Input from './Input';
 import Navbar from '../Navbar';
-
 import { makeStyles } from "@material-ui/core/styles";
-
-
 
 const useStyles = makeStyles({
   root: {
@@ -52,7 +48,7 @@ export default  function Dashboard() {
     }
   }, [data]);
   
-  console.log('App - parkData', parkData);
+
   
 
   const filterParksByPark = (park) => {

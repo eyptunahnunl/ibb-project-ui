@@ -1,22 +1,13 @@
-
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import ReactMapGL, { Marker, Popup } from 'react-map-gl';
-import mapboxgl from 'mapbox-gl';
 import { useSpring, animated } from 'react-spring';
 import './styles.css'
 import { makeStyles } from '@material-ui/core/styles';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableRow from '@material-ui/core/TableRow';
 import TextField from '@material-ui/core/TextField';
-import Grid from '@material-ui/core/Grid';
 import { Button,message } from 'antd';
 import { updatePark } from '../../../../hooks/authApi';
-import SignUp from '../../../../pages/Auth/Signup';
 import { Formik } from 'formik';
 import { Box } from '@material-ui/core';
-
 
 const useStyles = makeStyles({
   table: {
@@ -76,10 +67,7 @@ const Markers = ({ park, isShowing }) => {
       >
         <div className='Marker'
           onClick={e => {
-            // If we let the click event propagates to the map, it will immediately close the popup
-            // with `closeOnClick: true`
-
-            setPopupInfo(park);
+               setPopupInfo(park);
           }}
         />
 
@@ -107,7 +95,6 @@ const Markers = ({ park, isShowing }) => {
               locationName: park.locationName,
               workingTime: park.workingTime
             }}
-            //validationSchema
             onSubmit={handleSubmit}
           >
             

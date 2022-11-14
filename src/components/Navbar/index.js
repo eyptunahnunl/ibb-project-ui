@@ -7,8 +7,9 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Sigin from '../../pages/Auth/Signin';
-
+import ibbLogo from '../../../src/image/ibbLogo.png'
 import { useAuth } from '../../context/AuthContext';
+import './styles.css'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -22,50 +23,34 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 export default function MyNavbar() {
-    const classes = useStyles();
-    const {loggedIn} = useAuth();
+  const classes = useStyles();
+  const { loggedIn } = useAuth();
 
-    console.log(loggedIn)
+  console.log(loggedIn)
 
-    return (
-      <div className={classes.root}>
-        <AppBar position="fixed" color='primary'>
-          <Toolbar>
-            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-              <MenuIcon />
-            </IconButton>
-
-            <Typography variant="h6" className={classes.title}>
-            <Button color="inherit" href="/">Home</Button>
-            </Typography>
-        
-
-                
-                {
-                  !loggedIn &&
-                  <>             
-                  <Button color="inherit" href="/signin">Login</Button>
-                  <Button color="inherit" href="/signup">Register</Button>
-                  </>
-                }
-
-                {
-                  loggedIn && 
-                  
-                  <>
-                  
-                  <Button color="inherit" href="/Home">Profile</Button>
-                  </>
-                }
-
-
-
-
-
-
-
-          </Toolbar>
-        </AppBar>
-      </div>
-    );
+  return (
+    <div className={classes.root}>
+      <AppBar position="fixed" color='primary'>
+        <Toolbar>
+          <img src={ibbLogo} id="Logo" />
+          <Typography className={classes.title}>
+            <Button color="inherit" href="/">HOME</Button>
+          </Typography>
+          {
+            !loggedIn &&
+            <>
+              <Button color="inherit" href="/signin">Login</Button>
+              <Button color="inherit" href="/signup">Register</Button>
+            </>
+          }
+          {
+            loggedIn &&
+            <>
+              <Button color="inherit" href="/Home">Profile</Button>
+            </>
+          }
+        </Toolbar>
+      </AppBar>
+    </div>
+  );
 }

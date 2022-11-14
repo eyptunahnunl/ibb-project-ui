@@ -10,25 +10,21 @@ const AuthProvider = ({ children }) => {
 	const [loggedIn, setLoggedIn] = useState(false);
 	const [loading, setLoading] = useState(true);
 	
- 	useEffect(() => {
+	useEffect(() => {
 		(async () => {
 			try {
 
-				const me =await fetchMe()
-
-
-			   
 			} catch (e) {
-			
+					
 			}
 		})();
-	}, []); 
+	}, []);
 
     const login = (data) => {
 		setLoggedIn(true);
 		setUser(data);
 
-		
+		localStorage.setItem('userId', data.data.userId)
 		localStorage.setItem('access-token', data.data.token)
 
 	};

@@ -47,9 +47,3 @@ export const updatePark = async (input) => {
 
     return data;
 }
-
-export const fetchMe =async(id) => {
-	const {data} =await axios.post(
-		`${process.env.REACT_APP_BASE_ENDPOINT}/api/`
-	)
-}

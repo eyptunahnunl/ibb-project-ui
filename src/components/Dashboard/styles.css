@@ -2,16 +2,17 @@
   position: relative;
   display: inline-block;
   background-color: #3F51B5 ;
-  padding: 5px;
+  padding: 0px 5px;
   border-radius: 5px;
   margin-left: 15px;
   color: white;
 
 }
 #parkInput{
-  margin-left: 10px;
+  margin-left: 12px;
   color: #3F51B5;
   border-radius: 5px;
   font-size: medium;
-  padding: 3px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
