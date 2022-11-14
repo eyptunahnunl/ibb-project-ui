@@ -1,0 +1,58 @@
+/* MAP */
+#map {
+  
+    flex: 1;
+    border: 1px solid rgb(245, 189, 179);
+    margin-top: 4em;
+    overflow-y: hidden;
+    height: 100%;
+  }
+  
+  #boroughs-map {
+    position: absolute;
+    top: px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    
+  
+  }
+  
+  #map svg {
+    background:#e1e8ea;
+    height: calc(100% - 45px);
+  }
+  
+  #parkChoices {
+    /* display: none; */
+    border: 2px solid #cecece;
+    /* position: absolute; */
+    max-height: 350px;
+    padding: 10px 20px;
+    /* width: 300px; */
+    top: 40px;
+    background: white;
+    overflow: scroll;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .parkChoice {
+    font-size: 15px;
+    padding: 5px 0;
+    cursor: pointer;
+  }
+  
+  #court {
+    flex: 1;
+    margin-right:5px;
+  }
+  
+  #court input {
+   font-size: 14px;
+   width: 100%;
+   color: rgba(117, 117, 117);
+  }
+  

@@ -1,0 +1,42 @@
+{
+  "name": "react-mapbox",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@material-ui/lab": "^4.0.0-alpha.61",
+    "antd": "^4.24.1",
+    "axios": "^0.21.1",
+    "d3": "6.2.0",
+    "dotenv": "^8.2.0",
+    "formik": "^2.2.9",
+    "mapbox-gl": "^1.13.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-map-gl": "^5.2.10",
+    "react-mapbox-gl": "^5.1.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.4",
+    "react-spring": "8.0.27",
+    "yup": "^0.32.9"
+  },
+  "devDependencies": {
+    "typescript": "3.8.3"
+  },
+  "scripts": {
+    "start": "set PORT=3006 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

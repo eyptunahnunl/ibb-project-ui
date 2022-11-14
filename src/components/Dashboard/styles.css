@@ -1,0 +1,17 @@
+#sidebarStyle {
+  position: relative;
+  display: inline-block;
+  background-color: #3F51B5 ;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 15px;
+  color: white;
+
+}
+#parkInput{
+  margin-left: 10px;
+  color: #3F51B5;
+  border-radius: 5px;
+  font-size: medium;
+  padding: 3px;
+}

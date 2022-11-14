@@ -1,0 +1,15 @@
+.Marker {
+    width: 30px;
+    height: 30px;
+    background-image: url('./park.png') ;
+    background-size: cover;
+}
+
+.Marker:hover{
+    width: 30px;
+    height: 30px;
+    border : 2px solid green;
+    border-radius: 100%;
+    background-color: greenyellow;
+
+}

@@ -1,0 +1,41 @@
+#DropDownBorough {
+  padding: 5px;
+  background-color: #3F51B5;
+  position: relative;
+  margin-top: 80px;
+  display: inline-block;
+  border-radius: 5px;
+  color: white;
+
+}
+
+#BoroughLabel{
+  padding: 5px;
+  margin-right: 10px;
+
+}
+#boroughs{
+  padding: 2px;
+  font-size: medium;
+  color: #3F51B5;
+  border-radius: 5px;
+}
+
+/* #borough {
+    display: flex;
+    flex-direction: column;
+  } /
+
+/ #borough select {
+    font-size: 14px;
+    padding: 1px;
+    outline: none;
+   } /
+
+
+/ #court,
+  #borough {
+    display: flex;
+    flex-direction: column;
+
+  } */
